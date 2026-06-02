@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 68" width="220" height="68">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&amp;display=swap');
+      .brand-text {
+        font-family: 'Fredoka', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        fill: #ffffff;
+        letter-spacing: 1.5px;
+      }
+      .sub-text {
+        font-family: 'Fredoka', sans-serif;
+        font-size: 9px;
+        font-weight: 500;
+        fill: #ffffff;
+        letter-spacing: 1px;
+        opacity: 0.9;
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(8, 0)">
+    <path d="M 26,16 
+             C 14,16 10,24 10,34 
+             C 10,44 14,52 26,52 
+             C 27.5,52 28.5,50.5 28.5,49
+             C 28.5,44 26,39 26,34
+             C 26,29 28.5,24 28.5,19
+             C 28.5,17.5 27.5,16 26,16 Z" 
+          fill="#ffffff" />
+          
+    <path d="M 36,16 
+             C 48,16 52,24 52,34 
+             C 52,44 48,52 36,52 
+             C 34.5,52 33.5,50.5 33.5,49
+             C 33.5,44 36,39 36,34
+             C 36,29 33.5,24 33.5,19
+             C 33.5,17.5 34.5,16 36,16 Z" 
+          fill="#ffffff" />
+          
+    <circle cx="21" cy="11" r="1.5" fill="#ffffff" opacity="0.7" />
+    <circle cx="41" cy="11" r="2" fill="#ffffff" opacity="0.8" />
+    <circle cx="31" cy="57" r="1.5" fill="#ffffff" opacity="0.7" />
+  </g>
+
+  <text x="76" y="38" class="brand-text">Naas cafe</text>
+  
+  <text x="78" y="52" class="sub-text">COFFEE &amp; ROASTERY</text>
+</svg>

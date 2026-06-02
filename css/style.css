@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* 絶対に最初に入れる文字化け防止 */
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family:
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  line-height: 1.7;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* レイアウト */
+.wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+.align-center {
+  text-align: center;
+}
+
+/* ヘッダー */
+.page-header {
+  padding-top: 5rem;
+}
+.logo {
+  width: 210px;
+}
+.main-navi {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.3rem;
+  list-style: none;
+}
+.main-navi a {
+  color: #ffffff;
+}
+.main-navi a:hover {
+  color: #0bd;
+}
+
+/* 見出し　h2 */
+.font-english {
+  font-family: "Philosopher", sans-serif;
+  color: #ffffff;
+}
+
+.page-title,
+.headig-large,
+.heading-medium {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.page-title {
+  margin-top: 2rem;
+  line-height: 1.4;
+}
+.headig-large {
+  margin-bottom: 1rem;
+  color: #8b4513;
+}
+.font-english2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #8b4513;
+}
+.font-english3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 800px;
+}
+.cover-home {
+  background-image: url(../images/r-steray-latte-art-5712778_1920.jpg);
+}
+
+/* about */
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 0;
+}
+.about p {
+  margin-bottom: 3rem;
+  color: #8b4513;
+}
+
+/* ボタン */
+.botan {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #8b4513;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: 0.5s;
+  margin-bottom: 3rem;
+}
+.botan:hover {
+  background-color: #db7d81;
+}
+/* フッター */
+.page-footer {
+  background-image: url(../images/ri_ya-coffee-6631154_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 12rem;
+}
+.info {
+  width: 100%;
+  max-width: 544px;
+  margin: auto;
+  padding: 0 1.5rem;
+  border-spacing: 0;
+}
+.info th,
+.info td {
+  border-bottom: 1px solid #fff;
+}
+.info th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem;
+}
+.info td {
+  padding: 1rem 0;
+}
+.copyright {
+  background-color: #8b4513;
+  text-align: center;
+  padding: 0.75rem 0;
+  margin-top: 6rem;
+  color: #fff;
+}
+
+/* News */
+/* 記事 */
+.sub-cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 528px;
+  margin-bottom: 4rem;
+}
+.cover-news {
+  background-image: url(../images/gedsarts-coffee-4591159\ \(1\).jpg);
+}
+
+.post {
+  margin-bottom: 3rem;
+}
+.post-title {
+  margin-bottom: 1.25rem;
+  color: #8b4513;
+}
+.post-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.post-cat {
+  color: #8b4513;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+.post-cat a {
+  color: #522e00fa;
+  background-color: #dfd4bc;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.post-date {
+  font-size: 0.875rem;
+  color: #522e00fa;
+}
+.post-thumbnail {
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+.post p {
+  margin-bottom: 1.5rem;
+  line-height: 2;
+  color: #522e00fa;
+}
+
+/* サイドバー */
+.side-menu {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.side-menu li {
+  border-bottom: 1px solid #c9c2bc;
+}
+.side-menu a {
+  color: #522e00fa;
+  display: block;
+  padding: 1rem;
+}
+.side-menu a:hover {
+  color: #db7d81;
+}
+
+/* デスクトップ版 */
+@media (min-width: 800px) {
+  /* 見出し */
+  .page-title {
+    font-size: 5rem;
+  }
+  .headig-large {
+    font-size: 4rem;
+  }
+  .page-title {
+    font-size: 2rem;
+  }
+  /* ヘッダー */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .main-navi {
+    font-size: 2rem;
+  }
+  /* ヘッダーカバー画像（news） */
+  .sub-cover {
+    height: 400px;
+    margin-bottom: 6rem;
+  }
+  .cover-news {
+    background-image: url(../images/jessicakwok-coffee-5037800_1920.jpg);
+  }
+  .news-contents {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post {
+    width: 70%;
+  }
+  .sidebar {
+    width: 22%;
+  }
+  .sidebar .heading-medium {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  /* 上ページ */
+  .cover-home {
+    background-image: url(../images/gedsarts-coffee-4591159\ \(1\).jpg);
+  }
+  .about {
+    margin: 4rem auto 0;
+  }
+
+  /* フッター */
+  .page-footer {
+    background-image: url(../images/bayzidislam-coffee-6984075_1920.jpg);
+    padding-top: 12rem;
+  }
+
+  .info th {
+    padding-left: 2.5rem;
+  }
+}
